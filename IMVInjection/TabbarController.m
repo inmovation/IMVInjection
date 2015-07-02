@@ -35,7 +35,7 @@
     self.viewControllers = viewControllers;
     for (int i = 0; i < self.viewControllers.count; i++) {
         UIViewController *vc = [self.viewControllers objectAtIndex:i];
-        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:[itemTitles objectAtIndex:i] image:[UIImage imageNamed:[normalImages objectAtIndex:i]] selectedImage:[UIImage imageNamed:[selectedImages objectAtIndex:i]]];
+        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:[itemTitles objectAtIndex:i] image:[UIImage imageNamed:[normalImages objectAtIndex:i]] tag:i];
         vc.tabBarItem = tabBarItem;
     }
 }
