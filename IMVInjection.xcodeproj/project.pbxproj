@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD08FB431B450F9300E16C6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB421B450F9300E16C6A /* main.m */; };
+		AD08FB461B450F9300E16C6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB451B450F9300E16C6A /* AppDelegate.m */; };
+		AD08FB491B450F9300E16C6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB481B450F9300E16C6A /* ViewController.m */; };
+		AD08FB4C1B450F9300E16C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD08FB4A1B450F9300E16C6A /* Main.storyboard */; };
+		AD08FB4E1B450F9300E16C6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD08FB4D1B450F9300E16C6A /* Images.xcassets */; };
+		AD08FB511B450F9300E16C6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD08FB4F1B450F9300E16C6A /* LaunchScreen.xib */; };
+		AD08FB5D1B450F9300E16C6A /* IMVInjectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB5C1B450F9300E16C6A /* IMVInjectionTests.m */; };
+		AD08FB681B450FFE00E16C6A /* IMVInjection.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD08FB671B450FFE00E16C6A /* IMVInjection.podspec */; };
+		AD08FB6C1B45121900E16C6A /* IMVInjectionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB6B1B45121900E16C6A /* IMVInjectionContext.m */; };
+		AD08FB6F1B45136100E16C6A /* IMVInjectionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB6E1B45136100E16C6A /* IMVInjectionUtils.m */; };
+		AD08FB721B45258600E16C6A /* IMVInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB711B45258600E16C6A /* IMVInvoker.m */; };
+		AD08FB751B452BA800E16C6A /* TestInjectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB741B452BA800E16C6A /* TestInjectObject.m */; };
+		AD08FB781B45306200E16C6A /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD08FB771B45306200E16C6A /* TabbarController.m */; };
+		BA3B51DD724672974DF22D4D /* libPods-IMVInjection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91910133E895544F5A09036F /* libPods-IMVInjection.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD08FB571B450F9300E16C6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD08FB351B450F9300E16C6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD08FB3C1B450F9300E16C6A;
+			remoteInfo = IMVInjection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EE853AF974B37264AFB73B /* Pods-IMVInjection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMVInjection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMVInjection/Pods-IMVInjection.debug.xcconfig"; sourceTree = "<group>"; };
+		91910133E895544F5A09036F /* libPods-IMVInjection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IMVInjection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD08FB3D1B450F9300E16C6A /* IMVInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMVInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD08FB411B450F9300E16C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD08FB421B450F9300E16C6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD08FB441B450F9300E16C6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AD08FB451B450F9300E16C6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AD08FB471B450F9300E16C6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AD08FB481B450F9300E16C6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AD08FB4B1B450F9300E16C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD08FB4D1B450F9300E16C6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD08FB501B450F9300E16C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD08FB561B450F9300E16C6A /* IMVInjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMVInjectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD08FB5B1B450F9300E16C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD08FB5C1B450F9300E16C6A /* IMVInjectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMVInjectionTests.m; sourceTree = "<group>"; };
+		AD08FB671B450FFE00E16C6A /* IMVInjection.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IMVInjection.podspec; sourceTree = "<group>"; };
+		AD08FB691B45121900E16C6A /* IMVInjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVInjection.h; sourceTree = "<group>"; };
+		AD08FB6A1B45121900E16C6A /* IMVInjectionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVInjectionContext.h; sourceTree = "<group>"; };
+		AD08FB6B1B45121900E16C6A /* IMVInjectionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVInjectionContext.m; sourceTree = "<group>"; };
+		AD08FB6D1B45136100E16C6A /* IMVInjectionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVInjectionUtils.h; sourceTree = "<group>"; };
+		AD08FB6E1B45136100E16C6A /* IMVInjectionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVInjectionUtils.m; sourceTree = "<group>"; };
+		AD08FB701B45258600E16C6A /* IMVInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMVInvoker.h; sourceTree = "<group>"; };
+		AD08FB711B45258600E16C6A /* IMVInvoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMVInvoker.m; sourceTree = "<group>"; };
+		AD08FB731B452BA800E16C6A /* TestInjectObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestInjectObject.h; sourceTree = "<group>"; };
+		AD08FB741B452BA800E16C6A /* TestInjectObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestInjectObject.m; sourceTree = "<group>"; };
+		AD08FB761B45306200E16C6A /* TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarController.h; sourceTree = "<group>"; };
+		AD08FB771B45306200E16C6A /* TabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
+		D24731BFF7807CE4E0FC8500 /* Pods-IMVInjection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMVInjection.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMVInjection/Pods-IMVInjection.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD08FB3A1B450F9300E16C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3B51DD724672974DF22D4D /* libPods-IMVInjection.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD08FB531B450F9300E16C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDF4A7C43621F796FDF844A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91910133E895544F5A09036F /* libPods-IMVInjection.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD08FB341B450F9300E16C6A = {
+			isa = PBXGroup;
+			children = (
+				AD08FB671B450FFE00E16C6A /* IMVInjection.podspec */,
+				AD08FB3F1B450F9300E16C6A /* IMVInjection */,
+				AD08FB591B450F9300E16C6A /* IMVInjectionTests */,
+				AD08FB3E1B450F9300E16C6A /* Products */,
+				F707E5CB5F19D0D37A6F9A0D /* Pods */,
+				4DDF4A7C43621F796FDF844A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AD08FB3E1B450F9300E16C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD08FB3D1B450F9300E16C6A /* IMVInjection.app */,
+				AD08FB561B450F9300E16C6A /* IMVInjectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD08FB3F1B450F9300E16C6A /* IMVInjection */ = {
+			isa = PBXGroup;
+			children = (
+				AD08FB661B450FF400E16C6A /* lib */,
+				AD08FB441B450F9300E16C6A /* AppDelegate.h */,
+				AD08FB451B450F9300E16C6A /* AppDelegate.m */,
+				AD08FB471B450F9300E16C6A /* ViewController.h */,
+				AD08FB481B450F9300E16C6A /* ViewController.m */,
+				AD08FB761B45306200E16C6A /* TabbarController.h */,
+				AD08FB771B45306200E16C6A /* TabbarController.m */,
+				AD08FB731B452BA800E16C6A /* TestInjectObject.h */,
+				AD08FB741B452BA800E16C6A /* TestInjectObject.m */,
+				AD08FB4A1B450F9300E16C6A /* Main.storyboard */,
+				AD08FB4D1B450F9300E16C6A /* Images.xcassets */,
+				AD08FB4F1B450F9300E16C6A /* LaunchScreen.xib */,
+				AD08FB401B450F9300E16C6A /* Supporting Files */,
+			);
+			path = IMVInjection;
+			sourceTree = "<group>";
+		};
+		AD08FB401B450F9300E16C6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD08FB411B450F9300E16C6A /* Info.plist */,
+				AD08FB421B450F9300E16C6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD08FB591B450F9300E16C6A /* IMVInjectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD08FB5C1B450F9300E16C6A /* IMVInjectionTests.m */,
+				AD08FB5A1B450F9300E16C6A /* Supporting Files */,
+			);
+			path = IMVInjectionTests;
+			sourceTree = "<group>";
+		};
+		AD08FB5A1B450F9300E16C6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD08FB5B1B450F9300E16C6A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD08FB661B450FF400E16C6A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AD08FB691B45121900E16C6A /* IMVInjection.h */,
+				AD08FB6A1B45121900E16C6A /* IMVInjectionContext.h */,
+				AD08FB6B1B45121900E16C6A /* IMVInjectionContext.m */,
+				AD08FB701B45258600E16C6A /* IMVInvoker.h */,
+				AD08FB711B45258600E16C6A /* IMVInvoker.m */,
+				AD08FB6D1B45136100E16C6A /* IMVInjectionUtils.h */,
+				AD08FB6E1B45136100E16C6A /* IMVInjectionUtils.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F707E5CB5F19D0D37A6F9A0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03EE853AF974B37264AFB73B /* Pods-IMVInjection.debug.xcconfig */,
+				D24731BFF7807CE4E0FC8500 /* Pods-IMVInjection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD08FB3C1B450F9300E16C6A /* IMVInjection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD08FB601B450F9300E16C6A /* Build configuration list for PBXNativeTarget "IMVInjection" */;
+			buildPhases = (
+				BD8288F66F9C838A7E885019 /* Check Pods Manifest.lock */,
+				AD08FB391B450F9300E16C6A /* Sources */,
+				AD08FB3A1B450F9300E16C6A /* Frameworks */,
+				AD08FB3B1B450F9300E16C6A /* Resources */,
+				F7BA60FF83BDF93372551D15 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMVInjection;
+			productName = IMVInjection;
+			productReference = AD08FB3D1B450F9300E16C6A /* IMVInjection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD08FB551B450F9300E16C6A /* IMVInjectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD08FB631B450F9300E16C6A /* Build configuration list for PBXNativeTarget "IMVInjectionTests" */;
+			buildPhases = (
+				AD08FB521B450F9300E16C6A /* Sources */,
+				AD08FB531B450F9300E16C6A /* Frameworks */,
+				AD08FB541B450F9300E16C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD08FB581B450F9300E16C6A /* PBXTargetDependency */,
+			);
+			name = IMVInjectionTests;
+			productName = IMVInjectionTests;
+			productReference = AD08FB561B450F9300E16C6A /* IMVInjectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD08FB351B450F9300E16C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = inmovation;
+				TargetAttributes = {
+					AD08FB3C1B450F9300E16C6A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					AD08FB551B450F9300E16C6A = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = AD08FB3C1B450F9300E16C6A;
+					};
+				};
+			};
+			buildConfigurationList = AD08FB381B450F9300E16C6A /* Build configuration list for PBXProject "IMVInjection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD08FB341B450F9300E16C6A;
+			productRefGroup = AD08FB3E1B450F9300E16C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD08FB3C1B450F9300E16C6A /* IMVInjection */,
+				AD08FB551B450F9300E16C6A /* IMVInjectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD08FB3B1B450F9300E16C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD08FB4C1B450F9300E16C6A /* Main.storyboard in Resources */,
+				AD08FB511B450F9300E16C6A /* LaunchScreen.xib in Resources */,
+				AD08FB4E1B450F9300E16C6A /* Images.xcassets in Resources */,
+				AD08FB681B450FFE00E16C6A /* IMVInjection.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD08FB541B450F9300E16C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BD8288F66F9C838A7E885019 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7BA60FF83BDF93372551D15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IMVInjection/Pods-IMVInjection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD08FB391B450F9300E16C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD08FB6C1B45121900E16C6A /* IMVInjectionContext.m in Sources */,
+				AD08FB491B450F9300E16C6A /* ViewController.m in Sources */,
+				AD08FB461B450F9300E16C6A /* AppDelegate.m in Sources */,
+				AD08FB431B450F9300E16C6A /* main.m in Sources */,
+				AD08FB751B452BA800E16C6A /* TestInjectObject.m in Sources */,
+				AD08FB781B45306200E16C6A /* TabbarController.m in Sources */,
+				AD08FB6F1B45136100E16C6A /* IMVInjectionUtils.m in Sources */,
+				AD08FB721B45258600E16C6A /* IMVInvoker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD08FB521B450F9300E16C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD08FB5D1B450F9300E16C6A /* IMVInjectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD08FB581B450F9300E16C6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD08FB3C1B450F9300E16C6A /* IMVInjection */;
+			targetProxy = AD08FB571B450F9300E16C6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD08FB4A1B450F9300E16C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD08FB4B1B450F9300E16C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD08FB4F1B450F9300E16C6A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD08FB501B450F9300E16C6A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD08FB5E1B450F9300E16C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD08FB5F1B450F9300E16C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD08FB611B450F9300E16C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EE853AF974B37264AFB73B /* Pods-IMVInjection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IMVInjection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AD08FB621B450F9300E16C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24731BFF7807CE4E0FC8500 /* Pods-IMVInjection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IMVInjection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AD08FB641B450F9300E16C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMVInjectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMVInjection.app/IMVInjection";
+			};
+			name = Debug;
+		};
+		AD08FB651B450F9300E16C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IMVInjectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMVInjection.app/IMVInjection";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD08FB381B450F9300E16C6A /* Build configuration list for PBXProject "IMVInjection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD08FB5E1B450F9300E16C6A /* Debug */,
+				AD08FB5F1B450F9300E16C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD08FB601B450F9300E16C6A /* Build configuration list for PBXNativeTarget "IMVInjection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD08FB611B450F9300E16C6A /* Debug */,
+				AD08FB621B450F9300E16C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD08FB631B450F9300E16C6A /* Build configuration list for PBXNativeTarget "IMVInjectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD08FB641B450F9300E16C6A /* Debug */,
+				AD08FB651B450F9300E16C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD08FB351B450F9300E16C6A /* Project object */;
+}
