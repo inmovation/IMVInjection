@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 inmovation. All rights reserved.
 //
 #import <objc/runtime.h>
-#import <dlfcn.h>
-#import <mach-o/ldsyms.h>
+//#import <dlfcn.h>
+//#import <mach-o/ldsyms.h>
 
 #import <IMVLogger.h>
 
@@ -20,19 +20,38 @@
     NSMutableDictionary *injectClassInfo = [NSMutableDictionary dictionary];
     
     //only scan classes user created
-    unsigned int count;
-    const char **classes;
-    Dl_info info;
+//    unsigned int count;
+//    const char **classes;
+//    Dl_info info;
+//    
+//    dladdr(&_mh_execute_header, &info);
+//    classes = objc_copyClassNamesForImage(info.dli_fname, &count);
+//    
+//    for (int i = 0; i < count; i++) {
+//        NSString *clsName = [NSString stringWithCString:classes[i] encoding:NSUTF8StringEncoding];
+//        Class cls = NSClassFromString (clsName);
+//        if (class_getClassMethod(cls, @selector(conformsToProtocol:)) && [cls conformsToProtocol:injection]) {
+//            [injectClassInfo setObject:cls forKey:clsName];
+//        }
+//    }
     
-    dladdr(&_mh_execute_header, &info);
-    classes = objc_copyClassNamesForImage(info.dli_fname, &count);
+    int numClasses;
+    Class * classes = NULL;
     
-    for (int i = 0; i < count; i++) {
-        NSString *clsName = [NSString stringWithCString:classes[i] encoding:NSUTF8StringEncoding];
-        Class cls = NSClassFromString (clsName);
-        if (class_getClassMethod(cls, @selector(conformsToProtocol:)) && [cls conformsToProtocol:injection]) {
-            [injectClassInfo setObject:cls forKey:clsName];
+    classes = NULL;
+    numClasses = objc_getClassList(NULL, 0);
+    
+    if (numClasses > 0 )
+    {
+        classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
+        numClasses = objc_getClassList(classes, numClasses);
+        for (int i = 0; i < numClasses; i++) {
+            Class cls = classes[i];
+            if (class_getClassMethod(cls, @selector(conformsToProtocol:)) && [cls conformsToProtocol:injection]) {
+                [injectClassInfo setObject:cls forKey:[[NSString alloc] initWithCString:class_getName(cls) encoding:NSUTF8StringEncoding]];
+            }
         }
+        free(classes);
     }
     
     return injectClassInfo;
